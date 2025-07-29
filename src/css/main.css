@@ -33,6 +33,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 p {
   margin: 5px 0;
   font-size: 25px;
@@ -41,6 +42,7 @@ p {
 }
 
 button {
+  margin: 2px;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -49,10 +51,10 @@ button {
   height: 2.5rem;
   width: 2.5rem;
   font-size: 28px;
-  color: brown;
+  color: whitesmoke;
   font-weight: bolder;
   background-color: transparent;
-  border: 2px solid brown;
+  border: 2px solid transparent;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -60,9 +62,9 @@ button {
 }
 
 button:hover {
-  background-color: brown;
+  background-color: rgb(19, 86, 194);
   color: whitesmoke;
   transform: scale(1.1);
-  border: 2px solid #fff;
+  border: 2px solid rgb(13, 117, 48);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }

@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { decrement, increment } from "./features/counter/CounterSlice";
+import { decrement, increment, reset } from "./features/counter/CounterSlice";
 
 const App = () => {
   const count = useSelector((state) => state.counter.value);
@@ -16,6 +16,10 @@ const App = () => {
     }
   };
 
+  const handleReset = () => {
+    dispatch(reset());
+  };
+
   return (
     <div className="main-section">
       <h2>Simple Counter Function</h2>
@@ -23,6 +27,7 @@ const App = () => {
         <button onClick={handleIncrement}>+</button>
         <p>{count}</p>
         <button onClick={handleDecrement}>-</button>
+        <button onClick={handleReset}>0</button>
       </div>
     </div>
   );
